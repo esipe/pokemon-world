@@ -1,0 +1,81 @@
+
+<html>
+
+	<head>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<script  src="GlobWeb/require.min.js"></script>
+
+	<script type="text/javascript">
+
+	require(['GlobWeb/src/GlobWeb'], function (GlobWeb)
+		{
+		// Create the globe
+		var globe = new GlobWeb.Globe( { canvas: "map3d"} );
+
+
+		// Add touch navigation
+		var THandler = new GlobWeb.TouchNavigationHandler();
+		// Add Google mouse navigation handler
+		var MHandler = new GlobWeb.GoogleMouseNavigationHandler();
+	
+		var navigation = new GlobWeb.Navigation(globe, {handlers: [MHandler, THandler]});
+
+		// Add mouse navigation
+		//var navigation = new GlobWeb.Navigation(globe);
+
+		var wmsLayer = new GlobWeb.WMSLayer({ baseUrl: "http://mapserver.esipe.geonef.fr/pokemon-world/map", layers: "land,lake,road,city,kanto,johto,sinnoh,hoenn,almia,fiore,kalos,unys,rival" , format:"image/png"});
+		globe.setBaseImagery( wmsLayer );
+
+	});
+
+
+	</script>
+
+	</head>
+
+
+	<body >
+
+	<div id="banner">
+		<div id="title"></div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="menu">
+		<a href="index.html">Accueil</a>
+		<a href="map.html">Carte</a>
+		<a href="other.html">Autres</a>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="corps">
+		<canvas id="map3d" style="border: none; margin: 0; padding: 0;" width="700" height="400"></div>
+	</div>
+
+
+	<script type="text/javascript">
+
+			var now = new Date();
+			var hours = now.getHours();
+			var psj=0;
+
+			if (hours > 17 && hours < 22){
+				   document.body.style.backgroundImage = 'url(image/backgroundlate.png)';
+			}
+			else if (hours > 21 || hours < 5){
+				   document.body.style.backgroundImage = 'url(image/backgroundnight.png)';
+			}
+			else{
+				   document.body.style.backgroundImage = 'url(image/background.png)';
+			}
+
+	</script>
+
+	</body>
+
+
+</html>

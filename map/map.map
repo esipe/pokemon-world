@@ -1,0 +1,253 @@
+MAP
+
+	IMAGETYPE      PNG
+	EXTENT	 -60.0001862487063704 -59.9984454728830130 59.9987031179154116 60.0004438937387690
+	SIZE           800 800
+	SHAPEPATH      "data"
+	IMAGECOLOR     14 133 163
+	FONTSET fonts.list
+
+
+	PROJECTION
+		"init=epsg:4326"
+	END
+
+	WEB
+		METADATA
+			"wms_enable_request"      "*"
+			"wms_srs"                 "EPSG:4326"
+			"wms_title"               "mymap"
+			"wms_online_resource"     "http://mapserver.esipe.geonef.fr/?map=/project/pokemon-world/map/map.map&"
+			"wms_feature_info_mime_type" "text/html"
+		END
+	END
+
+	LAYER 
+		NAME         land
+		CONNECTIONTYPE OGR
+		CONNECTION "data/world.shp"
+		STATUS       ON
+		TYPE         POLYGON
+
+		CLASS
+			NAME       "LANDS"
+			STYLE
+				COLOR       107 187 37
+				OUTLINECOLOR 69	119 0	
+				WIDTH 2
+			END
+		END
+	END
+
+
+	LAYER 
+		NAME         lake
+		CONNECTIONTYPE OGR
+		CONNECTION "data/lake.shp"
+		STATUS       ON
+		TYPE         POLYGON
+
+		CLASS
+			NAME       "LAKE"
+			STYLE
+				COLOR       133	247 246	
+			END
+		END
+	END
+
+	LAYER
+		NAME         road
+		CONNECTIONTYPE OGR
+		CONNECTION "data/road.shp"
+		STATUS       ON
+		TYPE         LINE
+		#MINSCALE 4700000
+		LABELITEM 'id'
+		LABELMAXSCALE 15000000
+
+
+		CLASS
+			NAME       "ROADS"
+			LABEL
+			COLOR  0 0 0
+			FONT 'gras'
+			TYPE truetype
+			SIZE 10
+			POSITION auto
+			PARTIALS false
+		END
+
+		STYLE
+			COLOR       255 255 255
+			OPACITY 85
+			WIDTH 5
+			END
+		END
+	END
+
+	SYMBOL
+		NAME "city"
+		TYPE vector 
+		POINTS
+			0 0
+			0 1
+			1 1
+			1 0
+			0 0
+		END 
+		FILLED true
+	END 
+
+	LAYER 
+		NAME         city
+		CONNECTIONTYPE OGR
+		CONNECTION "data/city.shp"
+		STATUS       ON
+		TYPE         POINT
+		CLUSTER
+			MAXDISTANCE 20  
+			REGION "ellipse" 
+		END
+		LABELITEM 'Nom'
+		LABELMAXSCALE 60000000
+
+		CLASS
+			NAME       "CITY"
+			LABEL
+				COLOR  0 0 0
+				FONT 'gras'
+				TYPE truetype
+				SIZE 10
+				POSITION auto
+				PARTIALS false
+			END	
+			STYLE
+				SYMBOL "city"
+				COLOR       255 0 0
+				SIZE 10
+			END
+
+		END
+	END 
+
+	SYMBOL
+		NAME "blue"
+		TYPE pixmap
+		IMAGE "data/blue.png"
+	END 
+
+	SYMBOL
+		NAME "silver"
+		TYPE pixmap
+		IMAGE "data/silver.png"
+	END
+
+	SYMBOL
+		NAME "cheren"
+		TYPE pixmap
+		IMAGE "data/cheren.png"
+	END
+
+	LAYER 
+		NAME         rival
+		CONNECTIONTYPE OGR
+		CONNECTION "data/rival.shp"
+		STATUS       ON
+		TYPE         POINT
+		MAXSCALE 30000000
+		
+		TEMPLATE "rivalTemplate.html"
+
+		CLASS
+			NAME       "BLUE"
+			EXPRESSION ([Generation] = 1)
+			STYLE
+				SYMBOL "blue"
+			END
+		END
+
+		CLASS
+			NAME       "SILVER"
+			EXPRESSION ([Generation] = 2)
+			STYLE
+				SYMBOL "silver"
+			END
+		END
+
+		CLASS
+			NAME       "CHEREN"
+			EXPRESSION ([Generation] = 5)
+			STYLE
+				SYMBOL "cheren"
+			END
+		END
+
+	END
+
+	LAYER
+		NAME "kanto"
+		DATA "Kanto.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+	
+	LAYER
+		NAME "johto"
+		DATA "Johto.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "sinnoh"
+		DATA "Sinnoh.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "hoenn"
+		DATA "Hoenn.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "almia"
+		DATA "Almia.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "fiore"
+		DATA "Fiore.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "kalos"
+		DATA "Kalos.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+	LAYER
+		NAME "unys"
+		DATA "Unys.tif"
+		TYPE RASTER
+		STATUS ON
+		MAXSCALE 4700000
+	END
+
+END 
+
+

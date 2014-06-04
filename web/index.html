@@ -1,0 +1,81 @@
+
+<html>
+
+	<head>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	</head>
+
+
+	<body >
+
+	<div id="banner">
+		<div id="title"></div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="menu">
+		<a href="index.html">Accueil</a>
+		<a href="map.html">Carte</a>
+		<a href="other.html">Autres</a>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="corps">
+		<div id="resume">
+			<div id="texteResume">Bienvenue sur Pokemon World !</br></br>Sur ce site vous pourrez explorer le monde Pokemon comme jamais il ne vous l'a &eacute;t&eacute; pr&eacute;sent&eacute; ! Toutes les r&eacute;gions sont r&eacute;unies sur une m&ecirc;me carte, avec un niveau de d&eacute;tail pouss&eacute; au maximum pour chacune d'entre elles.</br></br>De plus, vous pouvez cr&eacute;er vous m&ecirc;me votre propre carte en assemblant les &eacute;l&eacute;ments souhait&eacute;s gr&acirc;ce &agrave; votre client WMS favori tels que QGis ou Openlayers en vous connectant au serveur : /?map=/map/pokemonworld/map/map.map</br></br>Le site est encore en d&eacute;veloppement, n'h&eacute;sitez pas &agrave; me contacter pour posez vos questions ou m'aider &agrave; compl&eacute;ter le site: julien.kazemi@cegetel.net</div>
+			<div id="resumeDroit">
+				<div id="logoEsipe"></div>
+				<div id="nomPrenom">Julien Kazemifard IG2</div>
+				<div id="pokpok"><center>
+				<script language="JavaScript">
+
+					function random_imglink(){
+					  var myimages=new Array();
+					  myimages[1]="image/salameche.png";
+					  myimages[2]="image/bulbizarre.png";
+					  myimages[3]="image/carapuce.png";
+					  myimages[4]="image/pikachu.png";
+
+					  var ry=Math.floor(Math.random()*myimages.length);
+
+					  if (ry==0){
+						 ry=1;
+					  }
+						 document.write('<img  src="'+myimages[ry]+'" border=0 height="140">');
+					}
+
+					random_imglink();
+
+				</script></center>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+			var now = new Date();
+			var hours = now.getHours();
+			var psj=0;
+
+			if (hours > 17 && hours < 22){
+				   document.body.style.backgroundImage = 'url(image/backgroundlate.png)';
+			}
+			else if (hours > 21 || hours < 5){
+				   document.body.style.backgroundImage = 'url(image/backgroundnight.png)';
+			}
+			else{
+				   document.body.style.backgroundImage = 'url(image/background.png)';
+			}
+				
+	</script>
+	
+	</body>
+
+
+</html>

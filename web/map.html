@@ -1,0 +1,56 @@
+
+<html>
+
+	<head>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	</head>
+
+
+	<body onload="init()">
+
+	<div id="banner">
+		<div id="title"></div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="menu">
+		<a href="index.html">Accueil</a>
+		<a href="map.html">Carte</a>
+		<a href="other.html">Autres</a>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="corps2">
+		<div id="layerStack"></div>
+		<div id="map"></div>
+	</div>
+
+	<script type="text/javascript">
+
+			var now = new Date();
+			var hours = now.getHours();
+			var psj=0;
+
+			if (hours > 17 && hours < 22){
+				   document.body.style.backgroundImage = 'url(image/backgroundlate.png)';
+			}
+			else if (hours > 21 || hours < 5){
+				   document.body.style.backgroundImage = 'url(image/backgroundnight.png)';
+			}
+			else{
+				   document.body.style.backgroundImage = 'url(image/background.png)';
+			}
+				
+	</script>
+	
+	</body>
+
+
+</html>
