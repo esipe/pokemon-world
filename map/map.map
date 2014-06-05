@@ -17,7 +17,7 @@ MAP
 			"wms_enable_request"      "*"
 			"wms_srs"                 "EPSG:4326"
 			"wms_title"               "mymap"
-			"wms_online_resource"     "http://mapserver.esipe.geonef.fr/?map=/project/pokemon-world/map/map.map&"
+			"wms_online_resource"     "http://mapserver.esipe.geonef.fr/pokemon-world/map?"
 			"wms_feature_info_mime_type" "text/html"
 		END
 	END

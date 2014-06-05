@@ -7,8 +7,18 @@ niveau de détail poussé au maximum pour chacune d'entre elles.
 
 De plus, vous pouvez créer vous même votre propre carte en assemblant
 les éléments souhaités grâce à votre client WMS favori tels que QGis ou
-Openlayers en vous connectant au serveur : http://esipe.geonef.fr/mapserver/pokemon-world/map?
+Openlayers en vous connectant au serveur : http://mapserver.esipe.geonef.fr/pokemon-world/map?
 
+Visualiser en WMS sous QGIS
+---------------------------
+(ou tout autre client WMS)
+Ouvrir QGIS puis :
+ * *Couche* -> *Ajouter une couche WMS*
+ * cliquer sur *Nouveau* pour ajouter ce serveur WMS :
+   * Nom : *pokemon-world* (ou autre)
+   * URL : *http://mapserver.esipe.geonef.fr/pokemon-world/map?*
+ * cliquer *OK* puis de retour à la fenêtre précédente, cliquer en bas sur *Ajouter* puis *Fermer*
+ * profitez !
 
 Auteurs
 -------
