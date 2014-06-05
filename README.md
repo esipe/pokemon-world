@@ -14,7 +14,7 @@ Visualiser en WMS sous QGIS
 ---------------------------
 
 ...ou tout autre [client WMS](http://fr.wikipedia.org/wiki/Web_Map_Service).
-Procédure pour [QGIS](http://www.qgis.org/fr/site/) :
+Procédure pour [QGIS](http://www.qgis.org/) :
 
  * *Couche* -> *Ajouter une couche WMS*
  * cliquer sur *Nouveau* pour ajouter ce serveur WMS :
