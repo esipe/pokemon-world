@@ -29,7 +29,7 @@ Auteurs
 
 Projet réalisé par Julien Kazemifard <jkazemif@etudiant.univ-mlv.fr>,
 étudiant IG2 de
-[l'École Supérieure D'Ingénieurs de l'Université Paris-Est Marne-la-Vallée (ESIPE)](http://esipe.u-pem.fr/).
+[l'École Supérieure D'Ingénieurs de l'Université Paris-Est Marne-la-Vallée (ESIPE)](http://esipe.u-pem.fr/),
 dans le cadre du cours *[Serveurs cartographiques](http://www.geonef.fr/doc/cours/mapserver-et-wms/)*.
 
 
