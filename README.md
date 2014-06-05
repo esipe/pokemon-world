@@ -9,24 +9,25 @@ De plus, vous pouvez créer vous même votre propre carte en assemblant
 les éléments souhaités grâce à votre client WMS favori tels que QGis ou
 Openlayers en vous connectant au serveur : http://mapserver.esipe.geonef.fr/pokemon-world/map?
 
+
 Visualiser en WMS sous QGIS
 ---------------------------
-(ou tout autre client WMS)
-Ouvrir QGIS puis :
+
+(ou tout autre client WMS). Ouvrir QGIS puis :
  * *Couche* -> *Ajouter une couche WMS*
  * cliquer sur *Nouveau* pour ajouter ce serveur WMS :
    * Nom : *pokemon-world* (ou autre)
    * URL : *http://mapserver.esipe.geonef.fr/pokemon-world/map?*
  * cliquer *OK* puis de retour à la fenêtre précédente, cliquer en bas sur *Ajouter* puis *Fermer*
- * profitez !
+ * c'est prêt : la couche devrait apparaître sous quelques secondes. Enjoy!
 
 Auteurs
 -------
-Projet réalisé par Julien Kazemifard <jkazemif@etudiant.univ-mlv.fr>, étudiant
-dans le cadre du cours
-"[Serveurs cartographiques](http://www.geonef.fr/doc/cours/mapserver-et-wms/])"
-de la [filière Informatique et Géomatique](http://esipe.u-pem.fr/filieres/informatique-et-geomatique/) à
+
+Projet réalisé par Julien Kazemifard <jkazemif@etudiant.univ-mlv.fr>,
+étudiant IG2 de
 [l'École Supérieure D'Ingénieurs de l'Université Paris-Est Marne-la-Vallée (ESIPE)](http://esipe.u-pem.fr/).
+dans le cadre du cours *[Serveurs cartographiques](http://www.geonef.fr/doc/cours/mapserver-et-wms/])*.
 
 
 Licence
