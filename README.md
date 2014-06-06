@@ -24,6 +24,26 @@ Procédure pour [QGIS](http://www.qgis.org/) :
  * c'est prêt : la couche devrait apparaître sous quelques secondes, navigable évidemment. Enjoy!
 
 
+Installation
+------------
+Le [tutoriel du cours](http://www.geonef.fr/doc/cours/mapserver-et-wms/installation-systeme)
+vous guide dans la mise en place de l'environnement sur une machine virtuelle
+VirtualBox, donc utilisable depuis Windows, Mac ou Linux.
+
+La machine installée est une *Debian GNU/Linux* exploitant
+*MapServer* en FastCGI derrière le serveur HTTP *Nginx*.
+
+Il est bien-sûr possible d'utiliser d'autres environnements comme par
+exemple Apache sur Windows.
+
+Après avoir cloné localement ce dépôt Git, il faut récupérer l'archive :
+http://esipe.geonef.fr/pokemon-world/extra-data.tar.bz2
+et la désarchiver dans le même dossier, en faisant :
+```
+curl http://esipe.geonef.fr/pokemon-world/extra-data.tar.bz2 | tar xjv
+```
+
+
 Auteurs
 -------
 
@@ -37,5 +57,5 @@ Licence
 -------
 
 Les fichiers présents dans ce dépôt sont distribués sous les termes de
-la licence CeCILL 2.1 contenue dans le fichier ./LICENSE et dont l'original
+la licence CeCILL 2.1 contenue dans le fichier [LICENSE](LICENSE) et dont l'original
 est disponible à l'URL http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html
