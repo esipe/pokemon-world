@@ -97,7 +97,6 @@ function init() {
         map.addControl(info);
         info.activate();
 
-
-    map.zoomToExtent(new OpenLayers.Bounds(-60,-60,60,60), true);
+    map.zoomToExtent(new OpenLayers.Bounds(-32.903366088867,-8.696365356445,13.854446411133,26.459884643555), true);
 
 }

@@ -27,8 +27,8 @@ body{
 
 #map{
 	float:left;
-	width: 532px;
-	height: 400px;
+	width: 632px;
+	height: 420px;
 
 
 
@@ -60,7 +60,7 @@ body{
 
 #layerStack {
 	width: 100px;
-	height:360px;
+	height:380px;
 	float:left;
 
 	padding:20px;
@@ -86,7 +86,7 @@ a:active {color:#FFFF00;}  /* selected link */
 	display: block;
 	margin-top: 2.5%;
 	height: auto;
-	width: 700px;
+	width: 800px;
 	margin-left:auto;
 	margin-right: auto;
 	-webkit-border-radius: 10px;
@@ -102,7 +102,7 @@ a:active {color:#FFFF00;}  /* selected link */
 	display: block;
 	margin-top: 2.5%;
 	height: auto;
-	width: 700px;
+	width: 800px;
 	margin-left:auto;
 	margin-right: auto;
 
@@ -151,7 +151,7 @@ a:active {color:#FFFF00;}  /* selected link */
 #menu {
 	margin-left: auto;
 	margin-right: auto;
-	width: 700px;
+	width: 800px;
 	height: auto;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;

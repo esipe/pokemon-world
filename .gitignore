@@ -1,0 +1,12 @@
+tmp/
+extra-data.tar.bz2
+web/extra-data.tar.bz2
+map/data/Almia.tif
+map/data/Fiore.tif
+map/data/Hoenn.tif
+map/data/Johto.tif
+map/data/Kalos.tif
+map/data/Kanto.tif
+map/data/Sinnoh.tif
+map/data/Unys.tif
+map/data/tmp3_georef.tif
